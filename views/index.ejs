@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>we learning ejs </title>
+</head>
+<body>
+    <h1><%= title %> </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, sit repudiandae. Quidem deserunt distinctio eius cumque, repudiandae architecto nisi ex ea explicabo accusamus. Quod non in, quisquam, tempora blanditiis eos accusamus iste voluptatum, quos voluptates id explicabo. Debitis sequi vel cupiditate magni recusandae nemo neque nam iste labore omnis deserunt, quod iure? Distinctio temporibus voluptatibus libero pariatur magni vero laudantium consequatur quasi ullam, fugiat, sapiente, a architecto? Possimus delectus repellat, autem omnis optio voluptas iusto rerum enim beatae ullam vitae explicabo commodi earum itaque! Nisi maiores quisquam est, eum dignissimos recusandae tenetur rem ipsa delectus. Quam fuga ad id deserunt.</p>
+
+    <%=  new Date().toString() %>
+
+
+    <!-- Condition check in ejs -->
+    <% if(post.isTrue){ %>
+        <h1>Title : <%= post.title %></h1>
+        <% } else {%>
+            <h1>nothing else</h1>
+        <% } %>
+
+        <!-- loop in ejs  -->
+
+        <% for(p of posts) {%>
+              <li><%= p.name %></li>
+            <% } %>
+
+</body>
+</html>
